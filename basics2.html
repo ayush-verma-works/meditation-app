@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basics 2</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body data-type="2">
+  <div class="spotify-container">
+    <aside class="sidebar">
+      <h2>Library</h2>
+      <a href="basics.html">⬅ Back to Library</a>
+    </aside>
+    <main class="main-content">
+      <h1>Basics 2</h1>
+      <div id="playlist" class="card-grid playlist-grid">
+        <div class="card" data-index="0">Day 1</div>
+        <div class="card" data-index="1">Day 2</div>
+        <div class="card" data-index="2">Day 3</div>
+        <div class="card" data-index="3">Day 4</div>
+        <div class="card" data-index="4">Day 5</div>
+        <div class="card" data-index="5">Day 6</div>
+        <div class="card" data-index="6">Day 7</div>
+        <div class="card" data-index="7">Day 8</div>
+        <div class="card" data-index="8">Day 9</div>
+        <div class="card" data-index="9">Day 10</div>
+      </div>
+      <div class="player-bar">
+        <div class="player-info">
+          <span id="track-title">Day 1</span>
+        </div>
+        <div class="player-controls">
+          <button id="prev-btn" class="player-btn"><span class="material-icons">skip_previous</span></button>
+          <button id="play-btn" class="player-btn"><span class="material-icons">play_arrow</span></button>
+          <button id="next-btn" class="player-btn"><span class="material-icons">skip_next</span></button>
+        </div>
+        <div class="player-time" style="min-width:90px;text-align:center;">
+          <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+        <div class="player-progress" id="progress">
+          <div class="player-progress-bar" id="progress-bar"></div>
+        </div>
+        <audio id="audio-player"></audio>
+      </div>
+    </main>
+  </div>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="./assets/js/player.js"></script>
+</body>
+</html>
